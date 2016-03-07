@@ -29,6 +29,9 @@
 				elms[i].style.webkitAnimationIterationCount = "infinite";
 				elms[i].style.animationPlayState = 'running';
 				elms[i].style.webkitAnimationPlayState = 'running';
+				elms[i].style.animationTimingFunction = 'linear';
+				elms[i].style.webkitanimationTimingFunction = 'linear';
+
 			}
 		}
 
