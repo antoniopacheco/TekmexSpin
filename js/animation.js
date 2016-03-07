@@ -66,20 +66,21 @@
 	function addSpeed(){
 		if(currentLetter){ //already select letter
 			currentSpeed = calcCurrentSpeed(currentLetter);
-			if(currentSpeed > 0){
-				newSpeed = currentSpeed - 500;
+			if(currentSpeed > 1){
+				newSpeed = currentSpeed - 200;
+				if(!newSpeed)
+					newSpeed = 100;
 				// console.log(currentSpeed - 500);
 				currentLetter.style.animationDuration = newSpeed+"ms";
 				currentLetter.style.webkitAnimationDuration = newSpeed+"ms";
 				console.log(currentLetter.style.animationDuration);
-
 			}	 	 	
 		}
 	}
 	function removeSpeed(){
 		if(currentLetter){ //already select letter
 			currentSpeed = calcCurrentSpeed(currentLetter);
-			newSpeed = currentSpeed + 500;
+			newSpeed = currentSpeed + 200;
 			console.log(newSpeed);
 			currentLetter.style.animationDuration = newSpeed+"ms";
 			currentLetter.style.webkitAnimationDuration = newSpeed+"ms";
