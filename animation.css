@@ -1,0 +1,74 @@
+.animation{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .animation span{
+            display: inline-block;
+            margin: 10px;
+            font-size: 40px;
+        }
+      /*  .animation .left{
+            color: red;
+            animation: spinLeft 2s;
+            animation-iteration-count:infinite;
+        }
+        .animation .right{
+            animation: spinRight 3s;
+            animation-iteration-count:infinite;
+        }*/
+        form{
+            width: 500px;
+            margin: 0 auto;
+        }
+        form label{
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group{
+            margin-bottom: 10px;
+        }
+
+        input{
+            display: block;
+            width: 100%;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+        }
+
+@-moz-keyframes spinRight {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spinRight {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@-o-keyframes spinRight {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spinRight {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes spinLeft {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes spinLeft {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+@-o-keyframes spinLeft {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+@keyframes spinLeft {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+}

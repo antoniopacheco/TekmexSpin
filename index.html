@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="animation.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="animation">
+		<span class="right">H</span>
+		<span class="left">E</span>
+		<span class="right">L</span>
+		<span class="left">L</span>
+		<span class="right">O</span>
+	</div>
+	<form>
+		<fieldset>
+			<legend>Control</legend>
+				<button type="button" id="pauseAll">Pause/Resume All</button>
+				<fieldset>
+					<legend id="currentLetter"></legend>
+					<button type="button" onclick="pauseSingle(); return false">Pause/Resume</button>
+					<button type="button" onclick="addSpeed(); return false">+ Speed</button>
+					<button type="button" onclick="removeSpeed(); return false">- Speed</button>
+				</fieldset>
+		</fieldset>
+	</form>
+
+</body>
+<script type="text/javascript" src="js/getData.js"></script>
+<script type="text/javascript" src="js/fixEvent.js"></script>
+<script type="text/javascript" src="js/eventHandlerTracker.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+</html>
